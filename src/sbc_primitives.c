@@ -32,10 +32,6 @@
 #include "sbc_tables.h"
 
 #include "sbc_primitives.h"
-#include "sbc_primitives_mmx.h"
-#include "sbc_primitives_iwmmxt.h"
-#include "sbc_primitives_neon.h"
-#include "sbc_primitives_armv6.h"
 
 /*
  * A reference C code of analysis filter with SIMD-friendly tables
@@ -535,20 +531,4 @@ void sbc_init_primitives(struct sbc_encoder_state *state)
 	state->sbc_calc_scalefactors = sbc_calc_scalefactors;
 	state->sbc_calc_scalefactors_j = sbc_calc_scalefactors_j;
 	state->implementation_info = "Generic C";
-
-	/* X86/AMD64 optimizations */
-#ifdef SBC_BUILD_WITH_MMX_SUPPORT
-	sbc_init_primitives_mmx(state);
-#endif
-
-	/* ARM optimizations */
-#ifdef SBC_BUILD_WITH_ARMV6_SUPPORT
-	sbc_init_primitives_armv6(state);
-#endif
-#ifdef SBC_BUILD_WITH_IWMMXT_SUPPORT
-	sbc_init_primitives_iwmmxt(state);
-#endif
-#ifdef SBC_BUILD_WITH_NEON_SUPPORT
-	sbc_init_primitives_neon(state);
-#endif
 }

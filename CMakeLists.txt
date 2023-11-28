@@ -16,14 +16,6 @@ add_library(sbc
         src/sbc_math.h
         src/sbc_primitives.c
         src/sbc_primitives.h
-        src/sbc_primitives_armv6.c
-        src/sbc_primitives_armv6.h
-        src/sbc_primitives_iwmmxt.c
-        src/sbc_primitives_iwmmxt.h
-        src/sbc_primitives_mmx.c
-        src/sbc_primitives_mmx.h
-        src/sbc_primitives_neon.c
-        src/sbc_primitives_neon.h
         src/sbc_tables.h
         src/sbcdec.c
         src/sbcenc.c
