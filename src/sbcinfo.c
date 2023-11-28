@@ -305,6 +305,7 @@ static int analyze_file(char *filename)
 	return 0;
 }
 
+/*
 int main(int argc, char *argv[])
 {
 	int i;
@@ -320,3 +321,4 @@ int main(int argc, char *argv[])
 
 	return 0;
 }
+*/

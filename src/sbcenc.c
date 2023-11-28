@@ -236,6 +236,7 @@ static struct option main_options[] = {
 	{ 0, 0, 0, 0 }
 };
 
+/*
 int main(int argc, char *argv[])
 {
 	int i, opt, subbands = 8, bitpool = 32, joint = 0, dualchannel = 0;
@@ -306,3 +307,4 @@ int main(int argc, char *argv[])
 
 	return 0;
 }
+*/

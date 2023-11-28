@@ -9,7 +9,7 @@ add_compile_definitions(HAVE_CONFIG_H)
 
 include_directories(src)
 
-add_executable(sbc
+add_library(sbc
         src/formats.h
         src/sbc.c
         src/sbc.h
