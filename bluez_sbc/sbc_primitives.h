@@ -36,6 +36,8 @@
 #define SBC_ALWAYS_INLINE inline
 #endif
 
+#include <stdint.h>
+
 struct sbc_encoder_state {
 	int position;
 	int16_t SBC_ALIGNED X[2][SBC_X_BUFFER_SIZE];

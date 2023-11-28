@@ -1,0 +1,10 @@
+[package]
+name = "bluez-sbc-sys"
+version = "4.86.0"
+edition = "2021"
+
+[build-dependencies]
+bindgen = "0.68.1"
+
+[dev-dependencies]
+hound = "3.5.1"

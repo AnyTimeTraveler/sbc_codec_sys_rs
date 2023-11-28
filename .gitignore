@@ -1,2 +1,7 @@
 /.idea/
 /cmake-build-debug/
+/target/
+*.a
+*.o
+/audio_testfiles/*
+!/audio_testfiles/.git_keep

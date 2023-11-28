@@ -22,6 +22,7 @@
  */
 
 #include <byteswap.h>
+#include <stdint.h>
 
 #if __BYTE_ORDER == __LITTLE_ENDIAN
 #define COMPOSE_ID(a,b,c,d)	((a) | ((b)<<8) | ((c)<<16) | ((d)<<24))

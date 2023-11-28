@@ -2,22 +2,22 @@ cmake_minimum_required(VERSION 3.26)
 project(sbc C)
 
 set(CMAKE_C_STANDARD 11)
+set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
+set(CMAKE_VERBOSE_MAKEFILE on)
 
 add_compile_definitions(HAVE_CONFIG_H)
 
-#add_compile_options(-Wall -Wextra -Werror -Wno-unused-variable -Wno-unused-parameter -Wno-unused-function -Wno-div-by-zero)
-
-include_directories(src)
+include_directories(bluez_sbc)
 
 add_library(sbc
-        src/formats.h
-        src/sbc.c
-        src/sbc.h
-        src/sbc_math.h
-        src/sbc_primitives.c
-        src/sbc_primitives.h
-        src/sbc_tables.h
-        src/sbcdec.c
-        src/sbcenc.c
-        src/sbcinfo.c
+        bluez_sbc/formats.h
+        bluez_sbc/sbc.c
+        bluez_sbc/sbc.h
+        bluez_sbc/sbc_math.h
+        bluez_sbc/sbc_primitives.c
+        bluez_sbc/sbc_primitives.h
+        bluez_sbc/sbc_tables.h
+        bluez_sbc/sbcdec.c
+        bluez_sbc/sbcenc.c
+        bluez_sbc/sbcinfo.c
 )
