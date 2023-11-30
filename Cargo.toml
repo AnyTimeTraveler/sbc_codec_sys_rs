@@ -1,6 +1,7 @@
 [package]
 name = "bluez-sbc-sys"
-version = "4.86.0"
+description = "A very thin wrapper around the SBC codec contained in BlueZ version 4.86.0"
+version = "1.0.0"
 edition = "2021"
 
 [build-dependencies]

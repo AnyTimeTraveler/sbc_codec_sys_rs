@@ -5,3 +5,4 @@
 *.o
 /audio_testfiles/*
 !/audio_testfiles/.git_keep
+*.wav
