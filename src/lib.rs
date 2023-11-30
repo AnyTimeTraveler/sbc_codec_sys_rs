@@ -10,7 +10,7 @@ use crate::params::{AllocationMethod, Blocks, ByteOrder, ChannelMode, Frequency,
 
 mod params;
 #[cfg(test)]
-mod wav_decode_encode_tests;
+mod test;
 // mod bindings;
 include!(concat!(env!("OUT_DIR"), "/bindings.rs"));
 
